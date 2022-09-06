@@ -15,13 +15,58 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmB-an-QcT">
+                                <rect key="frame" x="37.5" y="283.5" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="D5s-xc-O34"/>
+                                    <constraint firstAttribute="height" constant="50" id="XaB-Pr-MDZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhX-ec-a3o">
+                                <rect key="frame" x="0.0" y="333.5" width="137.5" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yesterday"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8I-b5-9aY">
+                                <rect key="frame" x="137.5" y="333.5" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ib1-aS-gQl"/>
+                                    <constraint firstAttribute="width" constant="100" id="qIL-nh-Qwm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Now"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJ3-1c-hns">
+                                <rect key="frame" x="237.5" y="333.5" width="137.5" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tomorrow"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r8I-b5-9aY" firstAttribute="leading" secondItem="LhX-ec-a3o" secondAttribute="trailing" id="0rP-Ap-2r6"/>
+                            <constraint firstItem="LhX-ec-a3o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HRd-j6-cqZ"/>
+                            <constraint firstItem="dJ3-1c-hns" firstAttribute="leading" secondItem="r8I-b5-9aY" secondAttribute="trailing" id="KUt-iP-l2u"/>
+                            <constraint firstItem="gmB-an-QcT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pgh-ne-X6k"/>
+                            <constraint firstItem="r8I-b5-9aY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z2h-2S-rt6"/>
+                            <constraint firstItem="dJ3-1c-hns" firstAttribute="top" secondItem="r8I-b5-9aY" secondAttribute="top" id="bhp-zr-xXa"/>
+                            <constraint firstItem="r8I-b5-9aY" firstAttribute="bottom" secondItem="LhX-ec-a3o" secondAttribute="bottom" id="dBF-Sx-4I0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dJ3-1c-hns" secondAttribute="trailing" id="eIo-M6-Ikc"/>
+                            <constraint firstItem="r8I-b5-9aY" firstAttribute="top" secondItem="gmB-an-QcT" secondAttribute="bottom" id="h1R-c6-zBs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="gmB-an-QcT" secondAttribute="bottom" id="hv5-Hg-CUx"/>
+                            <constraint firstItem="LhX-ec-a3o" firstAttribute="top" secondItem="r8I-b5-9aY" secondAttribute="top" id="laD-fC-3Rz"/>
+                            <constraint firstItem="r8I-b5-9aY" firstAttribute="bottom" secondItem="dJ3-1c-hns" secondAttribute="bottom" id="n2C-vX-oej"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="80"/>
+            <point key="canvasLocation" x="132" y="79.610194902548727"/>
         </scene>
     </scenes>
     <resources>
